@@ -1,6 +1,0 @@
-# Generate with
-#
-# !!ls *.c | sed s/\.c$//
-reverse
-str_isupper
-my_strchr

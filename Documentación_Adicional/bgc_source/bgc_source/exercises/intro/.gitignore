@@ -1,5 +1,0 @@
-# Generate with
-#
-# !!ls *.c | sed s/\.c$//
-hello_fruit
-hello_name

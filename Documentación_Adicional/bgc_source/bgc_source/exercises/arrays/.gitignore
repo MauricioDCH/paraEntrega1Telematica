@@ -1,6 +1,0 @@
-# Generate with
-#
-# !!ls *.c | sed s/\.c$//
-init312
-sum
-tictactoe

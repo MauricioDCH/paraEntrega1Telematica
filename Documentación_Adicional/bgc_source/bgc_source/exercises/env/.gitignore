@@ -1,4 +1,0 @@
-# Generate with
-#
-# !!ls *.c | sed s/\.c$//
-printenv

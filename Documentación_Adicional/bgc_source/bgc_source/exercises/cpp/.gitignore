@@ -1,6 +1,0 @@
-# Generate with
-#
-# !!ls *.c | sed s/\.c$//
-macro2
-cversion
-condcomp

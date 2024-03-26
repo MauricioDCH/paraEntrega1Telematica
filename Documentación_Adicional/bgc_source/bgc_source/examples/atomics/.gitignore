@@ -1,6 +1,0 @@
-# Generate with
-#
-# !!ls *.c | sed s/\.c$//
-atomics_rwdemo
-atomics_structcopy
-atomics_structlockfree
