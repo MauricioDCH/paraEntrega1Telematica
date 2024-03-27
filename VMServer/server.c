@@ -60,7 +60,7 @@ int main()
 
     // assign IP, PORT 
     servaddr.sin_family = AF_INET; 
-    servaddr.sin_addr.s_addr = inet_addr("192.168.1.15"); // Cambio aquí
+    servaddr.sin_addr.s_addr = inet_addr("54.88.121.101/"); // Cambio aquí
     servaddr.sin_port = htons(PORT); 
 
     // Binding newly created socket to given IP and verification 
