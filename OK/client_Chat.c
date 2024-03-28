@@ -47,7 +47,7 @@ int main()
 
 	// assign IP, PORT
 	servaddr.sin_family = AF_INET;
-	servaddr.sin_addr.s_addr = inet_addr("3.88.42.145");
+	servaddr.sin_addr.s_addr = inet_addr("107.22.150.218");
 	servaddr.sin_port = htons(PORT);
 
 	// connect the client socket to server socket

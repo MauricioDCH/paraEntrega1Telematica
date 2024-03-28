@@ -29,19 +29,20 @@ int main()
 	printf("Socket successfully created..\n");
 
     // Asignación de IP, PORT 
+    
     server_address.sin_family = AF_INET; 
-    server_address.sin_addr.s_addr = htonl(INADDR_ANY);
+    server_address.sin_addr.s_addr = inet_addr("3.88.42.145");
     server_address.sin_port = htons(PORT);
 
-    // BIND
-    if(bind(my_socket, (SOCKETADDRESS*)&server_address, sizeof(server_address))== -1){
-        printf("socket bind failed...\n");
-        exit(0);
-    }
-    else{
-        printf("Socket successfully binded..\n");
-    }
-
+        // BIND
+    // Binding newly created socket to given IP and verification 
+    if ((bind(my_socket, (SOCKETADDRESS*)&server_address, sizeof(server_address))) != 0) { 
+        perror("socket bind failed...\n"); // Manejo de errores
+        exit(EXIT_FAILURE); 
+    } 
+    else
+        printf("Socket successfully binded..\n"); 
+    
     // LISTEN
     int backlog = 5; // máxima cantidad de conexiones pendientes
     int status = listen(my_socket, backlog);
